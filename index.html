@@ -8,26 +8,34 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" placeholder="0" />
+        <input type="text" id="display" placeholder="0" disabled/>
         <div class="buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay('*')">*</button>
-            <button class="button" onclick="appendToDisplay('-')">-</button>
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button" onclick="appendToDisplay('+')">+</button>
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button" onclick="calculateResult()">=</button>
-            <button class="button" onclick="appendToDisplay('1')">1</button>
-            <button class="button" onclick="appendToDisplay('2')">2</button>
-            <button class="button" onclick="appendToDisplay('3')">3</button>
-            <button class="button zero" onclick="appendToDisplay('0')">0</button>
+            <button style="background-color: rgb(151, 148, 148) " class="button" data-value="C">C</button>
+            <button style="background-color: rgb(151, 148, 148)" class="button" data-value="+">+/-</button>
+            <button style="background-color: rgb(151, 148, 148)" class="button" data-value="%">%</button>
+            <button style="background-color: rgb(210, 146, 27);" class="button" data-value="/">/</button>
+            <button class="button" data-value="7">7</button>
+            <button class="button" data-value="8">8</button>
+            <button class="button" data-value="9">9</button>
+            <button style="background-color: rgb(210, 146, 27);" class="button" data-value="*">*</button>
+            <button class="button" data-value="4">4</button>
+            <button class="button" data-value="5">5</button>
+            <button class="button" data-value="6">6</button>
+            <button style="background-color: rgb(210, 146, 27);" class="button" data-value="-">-</button>
+            <button class="button" data-value="1">1</button>
+            <button class="button" data-value="2">2</button>
+            <button class="button" data-value="3">3</button>
+            <button style="background-color: rgb(210, 146, 27);" class="button" data-value="+">+</button>
+            <button class="button" data-value="00">00</button>
+            <button class="button" data-value="0">0</button>
+            <button class="button" data-value=".">.</button>
+            <button style="background-color: rgb(210, 146, 27);" class="button" data-value="=">=</button>
         </div>
     </div>
-    <script src="./cl.js"></script>
 </body>
+<script src="./cl.js"></script>
+
 </html>
+
+
+
